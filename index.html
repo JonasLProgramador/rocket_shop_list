@@ -10,7 +10,40 @@
     <link rel="stylesheet" href="styles/index.css"/>
 </head>
 <body>
-    <h1>Rocket shop list</h1>
+
+    <header class="only-desktop">        
+            <img src="./ assets/icons/logo.svg" alt="Logotipo da marca"/>
+     </header>
+
+
+    <main class="flex justify-center items-center div">
+        <div class="container grid  items-center justify-center gap-1">
+            <a href="#">
+                &#8592;
+                Voltar
+            </a>
+            <h1>Compras da semana</h1>
+            <div class="input-wrapper flex flex-col gap-1">
+                <input 
+                id="item" 
+                placeholder="Adicione um novo item" 
+                name="item"
+                type="text"
+                >
+                <button class="btn" type="button">Adicionar item</button>
+            </div>
+            
+
+            <ul class="" id="list"></ul>
+
+
+        </div>
+
+
+    </main>
+
 
 </body>
 </html>
+
+<script src="script.js" defer></script>
