@@ -1,0 +1,1 @@
+![Imagem de uma amostra do projeto](502shots_so.png)
