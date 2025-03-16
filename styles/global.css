@@ -20,7 +20,7 @@
   --border-primary: #d1d5db;
   --border-hover: #b9c2d0;
 
-  --px-md: 2rem;
+  --px-md: 1.5rem;
 }
 
 * {
@@ -33,15 +33,20 @@ html{
     font: var(--pgh);
     color: var(--content-primary);
     background-color: var(--background-primary);
-    ;
+    -webkit-font-smothing: antialiased;
+    -moz-osx-font-smothing: grayscale;
 }
 
 a{
     text-decoration: none;
 }
 
+[role="list"]{
+  list-style: none;
+}
+
 .container {
-  --max-width: 375px;
+  --max-width: 390px;
   max-width: calc(var(--max-width) - (var(--px-md) * 2));
 }
 
@@ -86,7 +91,7 @@ h1,h2,h3{
 
 @media (width >= 80rem) {
     :root{
-        --px-md:23.125rem
+        --px-md:15rem
     }
   .container {
     --max-width:80rem;

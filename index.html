@@ -9,16 +9,16 @@
     <title>Shop list Rocket</title>
     <link rel="stylesheet" href="styles/index.css"/>
 </head>
-<body>
+<body onload="loadingItems()">
 
     <header class="only-desktop">        
-            <img src="./ assets/icons/logo.svg" alt="Logotipo da marca"/>
+            <img src="./assets/icons/logo.svg" alt="Logotipo da marca"/>
      </header>
 
 
-    <main class="flex justify-center items-center div">
-        <div class="container grid  items-center justify-center gap-1">
-            <a href="#">
+    <main id="shop-content" class="flex justify-center items-center">
+        <div class="shop container items-center justify-center gap-1">
+            <a class="link" href="#">
                 &#8592;
                 Voltar
             </a>
@@ -30,11 +30,13 @@
                 name="item"
                 type="text"
                 >
-                <button class="btn" type="button">Adicionar item</button>
+                <button id="newItem" class="btn" type="button">Adicionar item</button>
             </div>
             
 
-            <ul class="" id="list"></ul>
+            <ul  role="list"  class="grid shop-list" id="list">
+                
+            </ul>
 
 
         </div>
